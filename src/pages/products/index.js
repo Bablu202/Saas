@@ -1,3 +1,4 @@
+import ProductCard from "src/products/components/Card";
 import { supabase } from "supabase";
 
 export default function ProductsPage({ products }) {
@@ -13,7 +14,11 @@ export default function ProductsPage({ products }) {
       </div>
       <div className="section small">
         <div className="container">
-          <ul className="product-card-grid"></ul>
+          <ul className="product-card-grid">
+            {products.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </ul>
         </div>
       </div>
     </>
