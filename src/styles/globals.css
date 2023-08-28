@@ -317,6 +317,10 @@ p {
   background-color: #ff90e8;
   color: black;
 }
+.bg-white {
+  background-color: #f8e3f4;
+  color: black;
+}
 .column-padding {
   position: relative;
   display: flex;
